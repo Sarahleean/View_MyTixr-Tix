@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="icon" type="image/png" href="./images/Page_icon/emopty1.png">
+    <link rel="stylesheet" href="./tix.css">
+    <link rel="stylesheet" href="./Compress-fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div id="app-box">
+        <section id="DownNav-excluded">
+            <section id="header">
+                <p id="Me"><span>LJ</span></p>
+                <div><img id="HostPhoto" src="./images/logo2.png" alt="TIXR"></div>
+                <!-- <a href="#" style="color: hsl(0, 0%, 98%);"><i class="fas fa-search"></i></a> -->
+                <img id="Glass-search" src="./images/nav_icons/icons8-search-100.png" alt="Search">
+            </section>
+
+            <section id="main-container">
+                <div class="SubTopic">
+                    <p>Splash House August Weekend 1</p>
+                    <span>Aug 11, 2023 at 11:00 AM PDT at Palm Springs Convention Center</span>
+                </div>
+
+                <div id="Main-Event">
+                    <img src="./images/IMG_8072.png" alt="event Photo">
+                    <div></div>
+                    <div id="buttonsHideFirst">
+                        <button>
+                            <p><span>3</span>Ticket</p>
+                        </button>
+                        <button>
+                            <p>Transfers</p>
+                        </button>
+                    </div>
+
+                    <div><i class="fa fa-lock"></i></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="bottomArea">
+            <div id="event-count">
+                <p>1 of 1 Event</p>
+            </div>
+
+            <div id="downNavigations">
+                <img class="nav_icons" src="./images/nav_icons/icons8-home-100.png" alt="Home">
+                <img class="TixRotate nav_icons" src="./images/nav_icons/icons8-ticket-100 (1).png" alt="Ticket">
+                <img class="nav_icons" src="./images/nav_icons/icons8-live-play-100.png" alt="Live Stream">
+            </div>
+        </section>
+
+        <section id="Js-PopupsAndCo">
+            <div id="inputiDAccess-window">
+                <p id="AccessiDTop">Transfer iD required</p>
+                <div class="input-group">
+                    <input type="text" id="input-field" placeholder=" ">
+                    <label for="input-field">Transfer ID</label>
+                </div>
+
+                <div>
+                    <p id="status">Your id number is incorrect.</p>
+                    <p>By Inputing your Order ID, you would be allowed to access and view your order details in
+                        accordance with their terms.</p>
+                </div>
+
+                <div id="liscenseAgreement">
+                    <div id="checkArea">
+                        <input id="checkboxiD" type="checkbox">
+                        <p>I have read and agree to the <span>Terms of Service</span> and the <span>Privacy
+                                Policy.</span></p>
+                    </div>
+
+                    <div>
+                        <p id="continueBTN">Continue to ticket(s)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile-container">
+                <i class="fa fa-angle-left closeProfilePage"></i>
+                <p id="SubTopicProfile">Profile</p>
+                <div class="profile-info">
+                    <div class="form-group">
+                        <input type="text" id="first-name" value="sabrina" placeholder=" ">
+                        <label for="first-name">First name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="last-name" value="j.christoper" placeholder=" ">
+                        <label for="last-name">Last name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" value="sabrinajchristopher@gmail.com" placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group select-group">
+                        <select id="gender" required>
+                            <option value="female" selected hidden>Female</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="form-group date-group">
+                        <input type="date" id="birthday" value="" style="display: none;">
+                        <!-- <input type="text" id="birthday-display" value="" readonly> -->
+                        <input type="text" id="birthday-display" value="" placeholder=" " readonly>
+                        <label for="birthday-display">Birthday</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="postal-code" placeholder=" ">
+                        <label for="postal-code">Postal code</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone-number" placeholder=" ">
+                        <label for="phone-number">Phone number</label>
+                    </div>
+                    <div class="form-group select-group">
+                        <select id="country-or-region" required>
+                            <option value="" selected hidden></option>
+                            <option value="USA">United States</option>
+                            <!-- <option value="Nigeria">Nigeria</option> -->
+                            <!-- <option value="Other">Other</option> -->
+                        </select>
+                        <label for="country-or-region">Country or region</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="overlay"></div>
+    <script src="./controls.js"></script>
+</body>
+
+</html>
