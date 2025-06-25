@@ -166,10 +166,10 @@ body.backGblack {
 }
 
 #bottomArea #downNavigations {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* bottom: 0; */
     display: flex;
     justify-content: space-between;
     width: 70%;
