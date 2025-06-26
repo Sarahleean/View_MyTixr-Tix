@@ -358,8 +358,13 @@ body.backGblack {
     margin-top: 2px;
 }
 
+#Js-PopupsAndCo #inputiDAccess-window #checkArea #liscenseAgreement a {
+    color: rgb(0, 132, 255);
+}
+
 #inputiDAccess-window #checkArea span {
     color: rgb(0, 132, 255);
+    text-decoration: underline rgb(0, 132, 255);
 }
 
 #continueBTN {
