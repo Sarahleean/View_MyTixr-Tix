@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="icon" type="image/png" href="./images/Page_icon/emopty1.png">
+    <link rel="stylesheet" href="./tix.css">
+    <link rel="stylesheet" href="./Compress-fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div id="app-box">
+        <section id="DownNav-excluded">
+            <section id="header">
+                <p id="Me"><span>JL</span></p>
+                <div><img id="HostPhoto" src="./images/logo2.png" alt="TIXR"></div>
+                <!-- <a href="#" style="color: hsl(0, 0%, 98%);"><i class="fas fa-search"></i></a> -->
+                <img id="Glass-search" src="./images/nav_icons/icons8-search-100.png" alt="Search">
+            </section>
+
+            <section id="main-container">
+                <div class="SubTopic">
+                    <p>Splash House August Weekend 1</p>
+                    <span>Aug 8, 2025 at 11:00 AM GMT-7 at Palm Springs Convention Center</span>
+                </div>
+
+                <div id="Main-Event">
+                    <img src="./images/IMG_8072.png" alt="event Photo">
+                    <div></div>
+                    <div id="buttonsHideFirst">
+                        <button id="TicketClick">
+                            <p><span>3</span>Ticket</p>
+                        </button>
+                        <button id="TransferClick">
+                            <p>Transfers</p>
+                        </button>
+                    </div>
+
+                    <div><i class="fa fa-lock"></i></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="bottomArea">
+            <div id="event-count">
+                <p>1 of 1 Event</p>
+            </div>
+
+            <div id="downNavigations">
+                <img class="nav_icons" src="./images/nav_icons/icons8-home-100.png" alt="Home">
+                <img class="TixRotate nav_icons" src="./images/nav_icons/icons8-ticket-100 (1).png" alt="Ticket">
+                <img class="nav_icons" src="./images/nav_icons/icons8-live-play-100.png" alt="Live Stream">
+            </div>
+        </section>
+
+        <section id="Js-PopupsAndCo">
+            <div id="inputiDAccess-window">
+                <p id="AccessiDTop">Transfer iD required</p>
+                <div class="input-group">
+                    <input type="text" id="input-field" placeholder=" ">
+                    <label for="input-field">Transfer ID</label>
+                </div>
+
+                <div>
+                    <p id="status">Your id number is incorrect.</p>
+                    <p>By Inputing your Order ID, you would be allowed to access and view your order details in
+                        accordance with their terms.</p>
+                </div>
+
+                <div id="liscenseAgreement">
+                    <div id="checkArea">
+                        <input id="checkboxiD" type="checkbox">
+                        <p>I have read and agree to the <span>Terms of Service</span> and the <span>Privacy
+                                Policy.</span></p>
+                    </div>
+
+                    <div>
+                        <p id="continueBTN">Continue to ticket(s)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile-container">
+                <i class="fa fa-angle-left closeProfilePage"></i>
+                <p id="SubTopicProfile">Profile</p>
+                <div class="profile-info">
+                    <div class="form-group">
+                        <input type="text" id="first-name" value="Jade" placeholder=" " readonly>
+                        <label for="first-name">First name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="last-name" value="Lawson" placeholder=" " readonly>
+                        <label for="last-name">Last name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" value="mercuryjjade@gmail.com" placeholder=" " readonly>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group select-group">
+                        <select id="gender" required>
+                            <option value="female" selected hidden>Female</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="form-group date-group">
+                        <input type="date" id="birthday" value="" class="hidden-date-input">
+                        <!-- <input type="text" id="birthday-display" value="" readonly> -->
+                        <input type="text" id="birthday-display" value="" placeholder=" " readonly>
+                        <label for="birthday-display">Birthday</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="postal-code" placeholder=" ">
+                        <label for="postal-code">Postal code</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone-number" placeholder=" ">
+                        <label for="phone-number">Phone number</label>
+                    </div>
+                    <div class="form-group select-group">
+                        <select id="country-or-region" required>
+                            <option value="" selected hidden></option>
+                            <option value="USA">United States</option>
+                            <!-- <option value="Nigeria">Nigeria</option> -->
+                            <!-- <option value="Other">Other</option> -->
+                        </select>
+                        <label for="country-or-region">Country or region</label>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="viewAvailableTix">
+                <div><i id="CloseClick" class="fa fa-times"></i></div>
+                <div id="TixSlideHolder">
+
+                    <div class="TixBox" id="TixOne">
+                        <div class="HotelRoom">
+                            <button class="prev-btn">&#10094;</button>
+                            <button class="next-btn">&#10095;</button>
+                            <div class="dots-container"></div>
+                        </div>
+                        <!-- <img src="./images/view.png" alt="view"> -->
+                        <div id="TixerDetails">
+                            <p>TRAVEL<br><span>Weekend 1 Suguaro Pool Facing Balcony - 1 King Bed [With 2 GA Pool
+                                    passes]</span></p>
+                            <p>Event<br><span>Splash House 2025</span></p>
+                            <p>Customer<br><span>Jade Lawson</span></p>
+                            <p>Order ID<br><span>S1B5U24P8C</span></p>
+                            <p>Serial ID<br><span>8806A</span></p>
+                        </div>
+                    </div>
+
+                    <div class="TixBox" id="TixTwo">
+                        <img src="./images/view.png" alt="view">
+                        <div id="TixerDetails">
+                            <p>MISCELLANEOUS<br><span>Weekend 1 Hotel Package Combo VIP Upgrade</span></p>
+                            <p>Event<br><span>Splash House 2025</span></p>
+                            <p>Customer<br><span>Jade Lawson</span></p>
+                            <p>Order ID<br><span>S1A6U54P3C</span></p>
+                            <p>Serial ID<br><span>7405A</span></p>
+                        </div>
+                    </div>
+
+                    <div class="TixBox" id="TixThree">
+                        <img src="./images/view.png" alt="view">
+                        <div id="TixerDetails">
+                            <p>MISCELLANEOUS<br><span>Weekend 1 Hotel Package Combo VIP Upgrade</span></p>
+                            <p>Event<br><span>Splash House 2025</span></p>
+                            <p>Customer<br><span>Jade Lawson</span></p>
+                            <p>Order ID<br><span>S1V3U51D3C</span></p>
+                            <p>Serial ID<br><span>6703A</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="DashesCounter">
+                    <!-- <div class="countDashes"></div> -->
+                </div>
+            </div>
+
+            <div id="TransfersPage">
+                <div><i id="CloseClickTwo" class="fa fa-times"></i></div>
+                <div class="container">
+                    <h1>Splash House August Weekend 1</h1>
+                    <p>Event date: <span class="boldTexts">Fri, Aug 8, 2025 at 11:00 AM GMT-7</span></p>
+                    <p>Transfer date: <span class="boldTexts">Jun 26, 2025 12:05 AM PDT</span></p>
+                    <p>Transfer ID: <span class="order-id">#78206A</span></p>
+                    <p>Transfer Status: <span class="boldTexts">Complete</span></p>
+                    <p class="print">Print</p>
+                    <hr>
+                    <div class="ticket-info">
+                        <div class="ticket-header">
+                            <p>Weekend 1 Hotel Package Combo VIP Upgrade</p>
+                            <p>Transfer</p>
+                        </div>
+                        <div class="ticket-details">
+                            <p class="boldTexts">Jade Lawson</p>
+                            <p class="boldTexts">Complete</p>
+                        </div>
+
+                        <div class="delivery-info">
+                            <div>
+                                <p>Delivery details</p>
+                                <p class="boldTexts">mercuryjjade@gmail.com</p>
+                                <p class="view-tickets">View Tickets</p>
+                            </div>
+
+                            <div id="textLeft">
+                                <p>Delivery Method</p>
+                                <p class="boldTexts">Electronic</p>
+                                <p>Digital Code</p>
+                                <p><i>-8806A</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <div class="ticket-info">
+                        <div class="ticket-header">
+                            <p>Weekend 1 Hotel Package Combo VIP Upgrade</p>
+                            <p>Transfer</p>
+                        </div>
+                        <div class="ticket-details">
+                            <p class="boldTexts">Jade Lawson</p>
+                            <p class="boldTexts">Complete</p>
+                        </div>
+
+                        <div class="delivery-info">
+                            <div>
+                                <p>Delivery details</p>
+                                <p class="boldTexts">mercuryjjade@gmail.com</p>
+                                <p class="view-tickets">View Tickets</p>
+                            </div>
+
+                            <div id="textLeft">
+                                <p>Delivery Method</p>
+                                <p class="boldTexts">Electronic</p>
+                                <p>Digital Code</p>
+                                <p><i>-7405A</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <div class="ticket-info">
+                        <div class="ticket-header">
+                            <p>Weekend 1 Saguaro Pool Facing Balcony - 1 King Bed [With 2 GA Pool passes]</p>
+                            <p>Transfer</p>
+                        </div>
+                        <div class="ticket-details">
+                            <p class="boldTexts">Jade Lawson</p>
+                            <p class="boldTexts">Complete</p>
+                        </div>
+
+                        <div class="delivery-info">
+                            <div>
+                                <p>Delivery details</p>
+                                <p class="boldTexts">mercuryjjade@gmail.com</p>
+                                <p class="view-tickets">View Tickets</p>
+                            </div>
+
+                            <div id="textLeft">
+                                <p>Delivery Method</p>
+                                <p class="boldTexts">Electronic</p>
+                                <p>Digital Code</p>
+                                <p><i>-6703A</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <!-- <div class="payment-info">
+                        <div class="payment-method">
+                            <p>Payment method</p>
+                            <p class="ThickTexts">visa ending in 8826</p>
+                        </div>
+
+                        <div id="textLeftTwo">
+                            <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p class="ThickTexts">$ 480.00</p>
+                        </div>
+                        <div class="discount">
+                            <p>Discount</p>
+                            <p class="ThickTexts">$ 0.00</p>
+                        </div>
+                        <div class="fees-taxes">
+                            <p>Fees & Taxes</p>
+                            <p class="ThickTexts">$ 26.00</p>
+                        </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="overlay"></div>
+    <script src="./controls.js"></script>
+</body>
+
+</html>
