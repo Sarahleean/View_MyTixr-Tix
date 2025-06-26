@@ -252,6 +252,7 @@ body.backGblack {
     color: hsl(0, 0%, 18%);
     padding: 14px;
     width: 90%;
+    max-width: 380px;
     border-radius: 22px;
     visibility: hidden;
     opacity: 0;
@@ -581,8 +582,8 @@ body.backGblack {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 12px;
-    margin: 20% auto;
-    width: 100%;
+    margin: 20vh auto;
+    width: fit-content;
     min-height: fit-content;
 }
 
@@ -596,7 +597,6 @@ body.backGblack {
     padding: 10px;
     min-width: 300px;
     height: 520px;
-
 }
 
 #viewAvailableTix .TixBox img {
@@ -754,6 +754,7 @@ body.backGblack {
 
 #TransfersPage .container {
     width: 95%;
+    max-width: 620px;
     margin-top: 60px;
     /* min-height: fit-content; */
     padding: 18px;
