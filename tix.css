@@ -600,9 +600,21 @@ body.backGblack {
     height: 520px;
 }
 
-#viewAvailableTix .TixBox img {
+ #viewAvailableTix .TixBox img {
     width: 100%;
-}
+ }
+
+/* #viewAvailableTix .TixBox .notHotel {
+    width: 100%;
+    height: 157.06px;
+    background: url(./images/week1.PNG);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-color: hsl(0, 0%, 5%);
+    border-radius: 12px;
+} */
 
 #viewAvailableTix .TixBox .HotelRoom {
     width: 100%;
