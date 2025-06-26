@@ -18,7 +18,8 @@ body.backGblack {
     color: hsl(0, 0%, 98%);
     padding: 12px;
     height: 100vh;
-    max-height: calc(100vh + 100px);
+    min-height: fit-content;
+    /* max-height: calc(100vh + 100px); */
     overflow: hidden;
 }
 
@@ -180,6 +181,7 @@ body.backGblack {
     padding: 40px 0;
 
     margin: 0 auto;
+    z-index: 200;
 }
 
 #bottomArea #downNavigations .nav_icons {
@@ -723,10 +725,10 @@ body.backGblack {
 
 /* transfer pages */
 #TransfersPage {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    transform: translateY(100%);
+    transform: translateY(150vh);
     display: flex;
     height: 100vh;
     width: 100%;
@@ -741,11 +743,10 @@ body.backGblack {
     pointer-events: none;
     transition: 0.5s ease-in-out;
 
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 #TransfersPage.showTransfer {
-    top: 0;
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
